@@ -81,7 +81,7 @@ impl ResourceType {
 ///
 /// # See also
 ///
-/// Check https://www.lux-ai.org/specs-2021#Resources<>
+/// Check <https://www.lux-ai.org/specs-2021#Resources>
 #[derive(PartialEq, Clone, fmt::Debug)]
 pub struct Resource {
     /// Type of resource

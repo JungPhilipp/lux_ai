@@ -40,7 +40,7 @@ fn main() -> lux_ai::LuxAiResult<()> {
                         let mut closest_distance = f32::MAX;
                         let mut closest_resource_cell: Option<&lux_ai::Cell> = None;
 
-                        // Find closest already researhed resource cell
+                        // Find closest already researched resource cell
                         for &resource_cell in resource_cells.iter() {
                             let distance = resource_cell.pos.distance_to(&unit.pos);
                             if let Some(resource) = &resource_cell.resource {
@@ -87,7 +87,7 @@ fn main() -> lux_ai::LuxAiResult<()> {
             }
         }
 
-        // Flust all performed actions
+        // Flush all performed actions
         environment.flush_actions()?;
         // End our turn
         environment.write_raw_action(lux_ai::Commands::FINISH.to_string())?;
